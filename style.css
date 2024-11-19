@@ -45,6 +45,9 @@ ul.menu{
     font-weight: 600;
     font-size: 18px;
 }
+.menu li a:hover{
+    color: #FD7900;
+}
 .container .menu{
     width: 1200px;
     height: 60px;
@@ -123,6 +126,8 @@ header .container .header{
     gap: 10px;
 }
 .menu-num .choose-number{
+    width: 300px;
+    height: 60px;
     text-decoration: none;
     border: 2px solid #DEDEDE;
     border-radius: 10px;
@@ -130,6 +135,7 @@ header .container .header{
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
+    background: none;
 }
 .delete-catalizator{
     text-decoration: none;
@@ -142,8 +148,11 @@ header .container .header{
     text-align: center;
     background: #FD7900;
 }
+.delete-catalizator:hover{
+    filter: drop-shadow(0 0 5px #000000); 
+}
 .choose-number, .delete-catalizator{
-    color: #DEDEDE;
+    color: #FAFAFA;
 }
 ul.auto{
     display: inline-flex;
@@ -230,7 +239,7 @@ ul.auto{
     text-align: center;
 }
 .button-galery{
-    padding-top: 60px;
+    padding-top: 7px;
     width: 200px;
     height: 40px;
     top: 290px;
@@ -238,9 +247,14 @@ ul.auto{
 .cart .button-galery{   
     text-decoration: none;
     border-radius: 10px;
-    padding: 10px 56px 9px 56px;
     color: #000000;
     border: 3px solid #FD7900;
+    text-align: center;
+    font-weight: 500;
+}
+.cart .button-galery:hover{   
+    background: #FD7900;
+    color: #DEDEDE;
 }
 .button-galery a{
     margin-top: 40px;
@@ -483,8 +497,7 @@ line-height: 36px;
 text-align: center;
 padding-top: 30px;
 }
-.button-zapic a{
-    text-decoration: none;
+.button-zapic input{
     border: 2px solid #A6A6A6;
     border-radius: 5px;
     font-size: 14px;
@@ -494,7 +507,8 @@ padding-top: 30px;
     width: 200px;
     height: 50px;
     color: #A6A6A6;
-    padding: 14px 0 15px 0;
+    background: none;
+    list-style: none;
 }
 .button-zapic .text-button-zapic{
     display: flex;
@@ -503,16 +517,19 @@ padding-top: 30px;
     padding-top: 20px;
 }
 .politika-zapic{
+    display: flex;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
-    text-align: left;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-align: center;
     margin-top: 33px;
 }
-
+.politika-zapic input{
+    margin-right: 5px;
+}
+.politika-zapic p{
+    margin-left: 0;
+    border-bottom: 1px solid #A6A6A6;
+}
 /*  */
 .kachectvo{
     background: #FAFAFA;
@@ -600,17 +617,19 @@ footer .inform-footer{
     align-items: center;
     line-height: none;
     flex-wrap: wrap;
-}
-.menu-footer li{
+    gap: 40px;
     color: #FFFFff;
+    padding-left: 40px;
 }
-.menu-footer a{
+.menu-footer li a{
     text-decoration: none;
     color: #FFFFff;
     font-size: 14px;
     font-weight: 700;
     line-height: 21px;
-    padding-left: 40px;
+}
+.menu-footer a:hover{
+    border-bottom: 1px solid #FFFFff;
 }
 .number-footer{
     margin-top: 50px;
