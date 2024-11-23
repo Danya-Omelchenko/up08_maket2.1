@@ -154,7 +154,7 @@ header .container .header{
 .choose-number, .delete-catalizator{
     color: #FAFAFA;
 }
-ul.auto{
+ul.slider{
     display: inline-flex;
     align-items: center;
     list-style: none;
@@ -163,46 +163,59 @@ ul.auto{
 /* price */
 .price h2{
     padding-top: 70px;
+    padding-left: 90px;
 }
-.price .auto{
+.price .slider{
     padding-top: 60px;
     gap: 40px;
     opacity: 0px;
 }
-.auto li{
+.price .container{
+    width: 1340px;
+}
+.slider li{
     width: 160px;
     height: 160px;
     background-color: #353535;
     border-radius: 25px;
     filter: drop-shadow(0 0 5px #000000); 
 }
-.avto{
+.avtov{
     padding-top: 33px;  
     width: 94px;
     height: 94px;               
     justify-content: center;
     text-align: center;
+    display: flex;
+    padding: 30px;
+    align-items: center;
 }
-.sub{
-    padding-top: 33px;
+.prev-button:hover{
+    filter: drop-shadow(0 0 5px #fff);
 }
-.honda{
-    padding-top: 45px;
+.next-button:hover{
+    filter: drop-shadow(0 0 5px #fff);
 }
-.hundai{
-    padding-top: 61px;
-}   
-.nissan{
-    padding-top: 47px;
+.prev-button,.next-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: white;
+  margin-top: 120px;
 }
-.peugeot{
-    padding-top: 41px;
+.prev-button {
+    transform: rotate(180deg);
+    margin-right: 60px;
 }
-.toyota{
-    padding-top: 48px;
+.next-button{
+    margin-left: 60px;
 }
-
-
+.boks{
+    display: flex;
+}
 /* galery */
 .galery{
     padding-top: 70px;
@@ -658,6 +671,9 @@ header .burger-menu{
 .active .line:nth-child(3){
     transform: rotate(45deg) translate(-10px, -5px);
 }
+.boks-mobile{
+    display: none;
+}
 @media (min-width: 375px) and (max-width: 720px){
     .container, header .container, .startscreen .container, .examples-bmw.container/*, .price .container, 
     .galery .container, .examples .container, .entry .container, .kachectvo .container, 
@@ -670,6 +686,12 @@ header .burger-menu{
     }
     header .menu{
         display: none;
+    }
+    .boks{
+        display: none;
+    }
+    .boks-mobile{
+        display: flex;
     }
     .header .logo{
         margin-right: 15px;
@@ -720,6 +742,7 @@ header .burger-menu{
     }
     .number{
         width: 100%;
+        font-size: 22px;
     }
     .work{
         width: 100%;
@@ -947,5 +970,75 @@ header .burger-menu{
         background-color: #fff;
         margin: 7px 0;
         transition:all 0.3s ease;
+    }
+    li .sub, .honda, .hundai, .nissan, .paugeot{
+        display: none;
+    }
+    .boks-mobile .slip{
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        display: flex;
+        margin: 30px;
+        padding: 20px;
+    }
+    .slip{
+        margin: auto;
+    }
+    .prev:hover{
+        filter: drop-shadow(0 0 5px #fff);
+    }
+    .next:hover{
+        filter: drop-shadow(0 0 5px #fff);
+    }
+    .prev,.next {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      background-color: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+      margin-top: 140px;
+    }
+    .prev {
+        transform: rotate(180deg);
+        margin-right: 60px;
+        margin-left:10px;
+    }
+    .next{
+        margin-left: 60px;
+    }
+    .next-button{
+        margin-top: 160px;
+    }
+    .price h2{
+        padding-left: 0;
+    }
+    .avt{
+        padding-top: 33px;  
+        width: 94px;
+        height: 94px;               
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        padding: 30px;
+        align-items: center;
+    }
+    ul.slide{
+        display: inline-flex;
+        align-items: center;
+        list-style: none;
+        flex-wrap: wrap;
+    }
+    .price .slide{
+        padding-top: 60px;
+        gap: 40px;
+        opacity: 0px;
+    }
+    .container .boks-mobile{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
     }
 }
