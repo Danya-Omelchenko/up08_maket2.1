@@ -1014,6 +1014,7 @@ header .burger-menu{
     }
     .price h2{
         padding-left: 0;
+        max-width: 440px;
     }
     .avt{
         padding-top: 33px;  
@@ -1040,5 +1041,8 @@ header .burger-menu{
         width: 100%;
         text-align: center;
         justify-content: center;
+    }
+    .price .container{
+        width: 100%;
     }
 }
